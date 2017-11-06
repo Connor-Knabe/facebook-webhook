@@ -4,3 +4,5 @@ module.exports.toNumber = '3145555111';
 module.exports.fromNumber = '5735554113';
 module.exports.facebookVerifyToken =
     'asdfkjasdf02j30fj20efj02je90fj092hf082hefhipdfpij';
+    module.exports.APP_SECRET = '02asdfasdfasdfasdf';
+    
