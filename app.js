@@ -51,11 +51,11 @@ app.post('/webhook', (req, res) => {
                 logger.debug('one entry', entry);
                 if (entry.changes) {
                     entry.changes.forEach(change => {
-                        if (change.field === 'conversations') {
-                            logger.debug('convo');
+                        if (change.field === 'messages') {
+                            logger.debug('message recieved');
                             sendText();
                         } else {
-                            logger.info('recieved a non conversation event?');
+                            logger.info('recieved a non message event?');
                         }
                     });
                 }
